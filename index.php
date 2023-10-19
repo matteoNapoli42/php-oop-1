@@ -2,7 +2,7 @@
 class Movie
 {
     public $title;
-    public $genres = [];
+    public $genres;
 
     public function __construct($title, $genres)
     {
