@@ -13,4 +13,9 @@ class Movie
         $this->coverImg = $coverImg;
         $this->genres = $genres;
     }
+
+    public function getTitle()
+    {
+        return $this->title;
+    }
 }

@@ -29,8 +29,14 @@ foreach ($movies as $movie) {
                 <h2>Titolo Film : </h2>
                 <span><?php echo $movie->title ?></span>
                 <h3>Genere</h3>
-                <span><?php foreach ($movie->genres as $genre)
-                            echo $genre ?></span>
+                <span>
+                    <?php foreach ($movie->genres as $genre) {
+                        echo $genre;
+                        echo ", ";
+                    }
+
+                    ?>
+                </span>
             </div>
         <?php endforeach ?>
     </div>
